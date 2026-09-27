@@ -165,7 +165,7 @@ on:
         description: "Has-Modules-Repo: Enable this ur kernel has modules repo(mostly for gki 2.0)"
         required: true
         type: boolean
-        default: true
+        default: false
 
       enable_tmpfs-xattr:
         description: "TMPFS_XATTR: U can enable this if ur kernel has no CONFIG_TMPFS_XATTR=y"
