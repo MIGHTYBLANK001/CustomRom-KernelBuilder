@@ -7,7 +7,7 @@ on:
         description: "Brand: Select your brand"
         required: true
         type: choice
-        default: oneplus
+        default: xiaomi
         options:
           - Manual-Type
           - oneplus
@@ -24,13 +24,13 @@ on:
         description: "SOC: Type your soc"
         required: true
         type: string
-        default: "sm8550"
+        default: "sm7250"
 
       clang_version:
         description: "Clang-Version: Select the clang version of ur kernel"
         required: true
         type: choice
-        default: clang-r563880c
+        default: clang-r450784d
         options:
           - clang-r416183b1 #lineage-19.1 in android12-qpr3-release
           - clang-r450784d  #lineage-20.0 in android13-qpr3-release
@@ -43,7 +43,7 @@ on:
         description: "Kernel-Source: Kernel repo's org/user on github"
         required: true
         type: choice
-        default: LineageOS
+        default: Manual-Type
         options:
           - Manual-Type
           - LineageOS
@@ -80,13 +80,13 @@ on:
         description: "Kernel-Branch: such as lineage-23.2 sixteen-qpr1 etc."
         required: true
         type: string
-        default: "lineage-23.2"
+        default: "13.0"
         
       kernel_configs:
         description: "Kernel-Configs: Select ur kernel configs(Use Manual-Type to custom it)"
         required: true
         type: choice
-        default: oplus-sm8550-los
+        default: Manual-Type
         options:
           - Manual-Type
           - oplus-sdm845-los
@@ -102,13 +102,13 @@ on:
         description: "Kernel-Configs-Manual: If u selected Manual-Type in previous options, manually type ur kernel configs here."
         required: false
         type: string
-        default: ""
+        default: "vendor/picasso_user_defconfig"
 
       ksu_type:
         description: "KSU: KernelSU Version"
         required: true
         type: choice
-        default: None
+        default: ReSukiSU
         options:
           - None
           - Official-KernelSU
@@ -150,7 +150,7 @@ on:
         description: "DroidSpaces: Enable DroidSpaces"
         required: true
         type: choice
-        default: None
+        default: 4.14-4.19
         options:
           - None
           - "6.12"
